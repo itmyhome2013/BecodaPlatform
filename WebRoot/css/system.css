@@ -1,0 +1,106 @@
+.smalltitle {
+	font-weight: bold;
+}
+#search {
+	height: 32px;
+	background-image: url(../images/bgsearch.jpg);
+	background-attachment: scroll;
+	background-repeat: repeat;
+	background-position: left top;
+	border-bottom: 1px solid #666666;
+}
+#search1 {
+	height: 32px;
+	background-image: url(../images/bgsearch.jpg);
+	background-repeat: repeat;
+	border-bottom: 1px solid #666666;
+	background-position: left top;
+}
+#search1 td {
+	color: #FFFFFF;
+}
+#search td {
+	color: #FFFFFF;
+}
+#search span {
+	color: #000000;
+}
+.Mtab1_OnMiddle_Auto {
+	background-image: url(../images/tabBgOn.gif);
+	background-position:top ;
+	background-repeat:repeat-x ;
+	height: 25px;
+	padding:1px 5px 0px 8px;
+	font-size:12px;
+	font-weight:normal ;
+	cursor:hand;
+	color: #000;
+	text-align: center;
+}
+td.Mtab1_OffMiddle_Auto {
+	background-image: url(../images/tabBgOff.gif);
+	background-position:top ;
+	background-repeat:repeat-x ;
+	height: 25px;
+	padding:1px 5px 0px 8px;
+	font-size:12px;
+	font-weight:normal ;
+	cursor:hand;
+	color: #000;
+	text-align: center;
+}
+.input_long {
+    width:200px ;
+    text-align: left;
+  }
+.input_short {
+    width:100px ;
+    text-align: left;
+  }
+.input_toolong {
+    width:500px ;
+    text-align: left;
+  }
+tr.tableListTitle {
+    background-image:url(../images/listTableTitleBgGray.gif) ;
+	background-repeat:repeat-x;
+	height:26px ;
+  }
+tr.tableListTitle td {
+    border-left:1px solid #fff ;
+    border-right:1px solid #B8C0AE ;
+	height: 26px ;
+	font-family:"ËÎÌו" ;
+	font-size:12px ;
+	font-weight:bold ;
+	text-align:center ;
+	padding-top:4px ;
+  }
+tr.tableListodds {
+    background-color:#D8DEEE ;
+  }
+tr.tableListodds td {
+	height: 18px ;
+	font-family:"ËÎÌו" ;
+	font-size:12px ;
+	text-align:center ;
+	padding-top:2px ;
+  }
+tr.tableListevens {
+    background-color:#FFF ;
+  }
+tr.tableListevens td {
+	height: 18px ;
+	font-family:"ËÎÌו" ;
+	font-size:12px ;
+	text-align:center ;
+	padding-top:2px ;
+  }
+.tablebg2{
+	background-color: #000000 ;
+  }
+div#titleBar2 {
+	width: 100%;
+	padding:0px 0px 0px 0px ;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr:#D8DEEE,EndColorStr :#ABB2C4,GradientType:0);
+	}

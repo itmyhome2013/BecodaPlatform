@@ -1,0 +1,25 @@
+/* CSS Document */
+.selectControlOption{display:none;}
+.selectDownList a:link,.selectDownList a:visited{font-size:12px;display:block;width:100%;text-decoration:none;color:#000;}
+.selectDownList a:hover,.selectDownList a:active{
+	font-size:12px;
+	display:block;
+	width:100%;
+	text-decoration:none;
+	color:#fff;
+	background-color: #6699FF;
+}
+.selectControlBtn,.selectBtnover,.selectBtnclick{cursor:pointer;_cursor /* */:hand;}
+.selectControlBtn{position:absolute;width:16px;height:20px;overflow:hidden;background:url(file:///C|/Documents and Settings/new/Local Settings/Temporary Internet Files/Content.IE5/Img/Select_btn.gif) no-repeat;top:0;_top:1px;}
+.selectControl{position:relative;}
+.clsInput{border:1px solid #2f6bc1 !important;font-size:12px !important;padding:.2em .1em .15em .1em; _height /* */:20px;}
+.selectBtnover{background:url(file:///C|/Documents and Settings/new/Local Settings/Temporary Internet Files/Content.IE5/Img/Select_btnover.gif) no-repeat;}
+.selectBtnclick{background:url(file:///C|/Documents and Settings/new/Local Settings/Temporary Internet Files/Content.IE5/Img/Select_btnclk.gif) no-repeat;}
+.selectDownList{
+	position:absolute;
+	overflow:auto;
+	background:#fff;
+	z-index:100;
+	border: 1px solid #99CCFF;
+}
+.selectCurStatus {color:#ff0000;}

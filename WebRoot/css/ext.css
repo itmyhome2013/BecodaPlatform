@@ -1,0 +1,1286 @@
+.tab {
+
+
+
+	padding: 5px 10px;
+
+
+
+	border: 1px solid #bcbcbc;
+
+
+
+	background: #f9f9f9;
+
+	
+
+	height: 30px;
+
+
+
+	border-bottom-width:0px;
+
+
+
+}
+
+
+
+
+
+.leftTab {
+
+
+
+    border-width: 1 1 0 1;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.rightTab {
+
+
+
+    border-width: 1 1 0 0;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.activeTab {
+
+
+
+    background:#6395C6;
+
+
+
+    color:white;
+
+
+
+
+
+    border-width: 0;
+
+
+
+    a.link:white;
+
+
+
+
+
+   padding: 5px 10px;
+
+
+
+
+
+	border: 1px solid #6395C6;
+
+
+
+
+
+	height: 30px;
+
+
+
+
+
+	border-bottom-width:0px;
+
+
+
+
+
+}
+
+
+
+.activeTab1 {
+
+ color: red;
+
+
+
+
+
+ TEXT-DECORATION: none;
+
+
+
+}
+
+
+
+.activeTab a:link {
+
+
+
+    color:white;
+
+
+
+
+
+    TEXT-DECORATION: none;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.activeTab A:hover {
+
+
+
+	COLOR: white;TEXT-DECORATION: none
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.activeTab A:active {
+
+
+
+	COLOR: white;TEXT-DECORATION: none
+
+	
+
+}
+
+
+
+
+
+
+
+.activeTab A:visited {
+
+
+
+
+
+	COLOR: white;TEXT-DECORATION: none
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.tabBox {
+
+
+
+    border:1px solid #6395C6;
+
+
+
+    border-top-width:3px;
+
+
+
+    width:100%;
+
+
+
+    height:100%;
+
+
+
+    padding:5px;
+
+
+
+    vertical-align:top;
+
+
+
+}
+
+
+
+
+
+
+
+.datatable A {
+
+
+
+    text-decoration:underline !important;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.noTab {
+
+    border-width: 1 1 0 1;
+
+
+
+    width:100%;
+
+
+
+    height:100%;
+
+
+
+    vertical-align:top;
+
+
+
+}
+
+
+
+
+
+.activeTab_1 {
+
+
+
+    background:#A4A4A4;
+
+
+
+    color:#ffffff;
+
+
+
+   padding: 5px 5px;
+
+
+
+	border: 1px solid #bcbcbc;
+
+
+
+	height: 30px;
+
+
+
+}
+
+
+
+.tabBox_1 {
+
+
+
+    border:1px solid #A4A4A4;
+
+
+
+    border-top-width:3px;
+
+
+
+    width:100%;
+
+
+
+    height:100%;
+
+
+
+   padding:5px;
+
+
+
+    vertical-align:top;
+
+
+
+}
+
+
+
+.tree {
+
+	width:200px;
+
+	padding: 5px 5px;
+
+	height:100%;
+
+	text-align:left;
+
+	vertical-align:top;
+
+	border: 1px solid #666666;
+
+}
+
+
+
+
+
+.table3{
+
+	border: 1px solid #666666;
+
+	width:195px;
+
+	padding: 5px 5px;
+
+	height:100%;
+
+}
+
+
+
+
+
+
+
+.td1{
+
+	text-align:right;
+
+	background:#f3f3f3;
+
+	width: 15%;
+
+}
+
+
+
+
+
+
+
+.td3{
+
+	text-align:left;
+
+	background:#F3F3F3;
+
+	width: 16%;
+
+}
+
+
+
+
+
+
+
+.td6{
+
+	text-align:left;
+
+	background:#f3f3f3;
+
+	width: 35%;
+
+}
+
+
+
+
+
+
+
+
+
+.td5{
+
+	text-align:center;
+
+	background:#F3F3F3;
+
+	width: 16%;
+
+}
+
+
+
+
+
+
+
+.td4{
+
+	text-align:left;
+
+	background:#F3F3F3;
+
+	width: 17%;
+
+	height: 20px;
+
+}
+
+
+
+
+
+.tdp{
+
+	text-align:left;
+
+	background: #EDECFF;
+
+     width: 18%;
+
+
+
+}
+
+
+
+
+
+.tdy{
+
+	text-align:left;
+
+	background: #FFFFB2; 
+
+    width: 18%;
+
+}
+
+
+
+
+
+
+
+.tdy2{
+
+	text-align:left;
+
+	
+
+	background: #FFFFB2; 
+
+	
+
+	height: 20px;
+
+	
+
+    width: 30%;
+
+}
+
+
+
+
+
+.td8{
+
+	text-align:left;
+
+	background:#f3f3f3;
+
+	height: 20px;
+
+	width: 35%;
+
+}
+
+
+
+
+
+
+
+.tdb{
+
+
+
+	text-align:left;
+
+
+
+
+
+	background: #F7F7FF; 
+
+
+
+    width: 18%;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.tdg{
+
+
+
+
+
+	text-align:left;
+
+
+
+	background: #DFFFFF; 
+
+    width: 18%;
+
+
+
+
+
+}
+
+
+/* 林燕坤*/
+/* 背景颜色表格宽度*/
+
+
+.tdp1{
+
+
+
+
+
+	background: #EDECFF; 
+
+
+
+
+
+}
+
+
+
+
+
+.tdy2{
+
+
+
+
+
+	background: #FFFFB0;
+
+
+
+}
+
+
+
+
+
+.tdw{
+
+
+
+
+
+text-align:left;
+
+
+
+	height: 20px;
+
+
+
+
+
+	width: 120px;
+
+
+
+
+
+}	
+
+
+
+
+
+.tdw1{
+
+
+
+text-align:left;
+
+
+
+	height: 20px;
+
+
+
+	width: 30px;
+
+
+
+
+
+}	
+
+
+
+
+
+.tdw3{
+
+
+
+
+
+text-align:left;
+
+
+
+	height: 20px;
+
+
+
+
+
+	width: 250px;
+
+
+
+
+
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.td2{
+
+
+
+
+
+
+
+
+
+	width: 50%;
+
+	height: 25px;
+
+
+
+	text-align:right;
+
+
+
+	text-valign:top;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.left{
+
+	text-align:left;
+
+
+
+	padding: 1px 5px;
+
+
+
+}
+
+
+
+
+
+
+
+.center{
+
+
+
+	text-align:center;
+
+
+
+}
+
+
+
+
+
+
+
+.right{
+
+
+
+	text-align:right;
+
+
+
+	padding: 1px 5px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.header1{
+
+
+
+	width: 100%;
+
+
+
+	height: 25px;
+
+
+
+	vertical-align:top;
+
+
+
+}
+
+
+
+
+
+.header12{
+
+
+
+	background: #F3F3F3;
+
+
+
+
+
+	height: 20px;
+
+
+
+
+
+	vertical-align:center;
+
+
+
+	font: 400;
+
+
+
+	background-color: #BBB1F6;
+
+
+
+}
+
+
+
+
+
+.body1{
+
+	width: 100%;
+
+
+
+	height: 30px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.menuleft {
+
+
+
+	width:50%;
+
+
+
+	padding: 5px 15px;
+
+
+
+	height:25px;
+
+
+
+	text-align:left;
+
+
+
+	background-image: url(../images/menu_bg.gif);
+
+
+
+
+
+}
+
+
+
+.menuright {
+
+
+
+	width:50%;
+
+
+
+	height:25px;
+
+
+
+	text-align:center;
+
+
+
+	background-image: url(../images/menu_bg.gif);
+
+
+
+}
+
+
+
+
+
+
+
+.message {
+
+
+
+	width:100%;
+
+
+
+	height:20px;
+
+
+
+	text-align:left;
+
+
+
+	vertical-align:center;
+
+	background:#6392c6;
+
+
+
+}
+
+
+
+
+
+
+
+.message1{
+
+	width: 100%;
+
+
+
+	height: 5px;
+
+}
+
+
+
+
+
+
+
+.content {	
+
+	padding: 5px 5px;
+
+
+
+	height:100%;
+
+
+
+	text-align:left;
+
+
+
+	vertical-align:top;
+
+
+	width:70%;
+}
+
+
+
+.tree{
+	width:30%;
+}
+
+
+
+
+
+.navigation{
+
+
+
+	width: 100%;
+
+
+
+	height: 100%;
+
+
+
+	vertical-align:top;
+
+
+
+}
+
+
+
+
+
+
+
+.tabBox2 {
+
+    border:1px solid #6395C6;
+
+
+
+    border-top-width:3px;
+
+
+
+    width:100%;
+
+
+
+    padding:5px;
+
+    vertical-align:top;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.height105{
+
+	height: 105px;
+
+	text-align:center;
+
+
+
+}
+
+
+
+
+
+
+
+.height80{
+
+
+
+	height: 80px;
+
+}
+
+
+
+
+
+.height50{
+
+
+
+	height: 50px;
+
+}
+
+.height20{
+
+
+
+	height: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.height389{
+
+
+
+	width: 140px;
+
+	height: 100%;
+
+
+
+}
+
+
+
+
+
+.height140{
+
+	height: 140px;
+
+	vertical-align:top;
+
+	vertical-align:center;
+
+
+
+}
+
+
+
+.width242{
+
+	width: 242px;
+
+}
+
+
+
+.logonbackimage1 {
+
+	width:100%;
+
+	height: 35px;
+
+	background-image: url(../images/login_01.gif);
+
+
+
+}
+
+
+
+
+
+.logonbackimage2 {
+
+
+
+	height: 50%;
+
+
+
+	background-image: url(../images/login_02.gif);
+
+
+
+}
+
+
+
+
+
+.logonbackimage3 {
+
+
+
+	width:100%;
+
+
+
+	height: 100%;
+
+
+
+	background-image: url(../images/login_04.jpg);
+
+
+
+}
+
+
+
+.logotable {
+
+
+
+	width:100%;
+
+	height: 100%;
+
+
+
+}
+
+.td50{
+
+   vertical-align:top;
+
+
+
+	width:50%;
+
+
+
+}
+
+.width30{
+
+	width:30%;
+
+}
+
+.width70{
+
+	width:70%;
+
+}
+
+
+.width42{
+
+	width:42%;
+
+}
+
+.width16{
+
+	width:16%;
+
+}

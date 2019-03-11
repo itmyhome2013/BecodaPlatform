@@ -1,0 +1,268 @@
+@charset "utf-8";
+.yew {
+	width: 99%;
+}
+.yew,.yew td{
+	border-collapse: collapse;
+	line-height: 33px;
+	padding-right: 4px;
+	padding-left: 4px;
+	font-size: 14px;
+	}
+.yew td{
+
+	}
+.hkd {
+	height: 22px;
+	border: 1px solid #abadb3;
+	line-height: 22px;
+	width: 177px;
+	padding-left: 5px;
+	font-family: Arial, "微软雅黑";
+	font-size: 14px;
+}
+.fsg {
+	font-size: 14px;
+	line-height: 22px;
+	height: 22px;
+	width: 185px;
+}
+.chushi {
+	background-image: url(../../images/csu/formImg/tre.jpg);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 91px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor: pointer;
+	color: #FFF;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: Arial, "微软雅黑";
+	margin-right:4px;
+	margin-left:4px;
+}
+.bianhua {
+	background-image: url(../../images/csu/formImg/tre2.jpg);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 91px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor: pointer;
+	color: #FFF;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: Arial, "微软雅黑";
+	margin-right:4px;
+	margin-left:4px;
+}
+.chushib {
+	background-image: url(../../images/csu/formImg/tree.jpg);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 91px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor: pointer;
+	color: #353535;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: Arial, "微软雅黑";
+	margin-right:4px;
+	margin-left:4px;
+}
+.bianhuab {
+	background-image: url(../../images/csu/formImg/tree2.jpg);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 91px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor: pointer;
+	color: #353535;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: Arial, "微软雅黑";
+	margin-right:4px;
+	margin-left:4px;
+}
+.chushic {
+	background-image: url(../../images/csu/formImg/trec.jpg);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 46px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: Arial, "微软雅黑";
+	margin-right:4px;
+	margin-left:4px;
+}
+.bianhuac {
+	background-image: url(../../images/csu/formImg/trc2.jpg);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 46px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: Arial, "微软雅黑";
+	margin-right:4px;
+	margin-left:4px;
+}
+.chushid {
+	background-image: url(../../images/csu/formImg/tree22.jpg);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 46px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor: pointer;
+	color: #353535;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: Arial, "微软雅黑";
+	margin-right:4px;
+	margin-left:4px;
+}
+.bianhuad {
+	background-image: url(../../images/csu/formImg/tree222.jpg);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 46px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor: pointer;
+	color: #353535;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: Arial, "微软雅黑";
+	margin-right:4px;
+	margin-left:4px;
+}
+.shuju  {
+	width: 100%;
+	border-collapse: collapse;
+	font-family: "宋体";
+	font-size: 12px;
+	color: #1F1F1F;
+	background-color: #FFF;
+}
+.shuju td    {
+	text-align: center;
+	line-height: 25px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-right: 2px;
+	padding-left: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ebebeb;
+	}
+.shuju .taitou {
+	background-image: url(../../images/csu/formImg/dd.jpg);
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+	background-color: #FFF;
+}
+.shuju .taitou td{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #E1E1E1;
+	line-height: 17px;
+	height: 23px;
+	border-bottom-color: #d1d6dd;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #d1d6dd;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #E1E1E1;
+}
+.shuju tr td a {
+	color: #0f71bd;
+	text-decoration: none;
+}
+.shuju tr td a:hover {
+	color: #0F85FB;
+	}
+	
+.shuju tr:hover,
+.shuju tr.hover{
+	background-color: #ECF3FB;
+}
+
+
+
+
+label.checkbox {padding-left: 24px; cursor:pointer;background: url(../../images/csu/formImg/checkbox.png) no-repeat left -21px; line-height:22px; height:21px; display:inline-block; }
+label.checked {background-position:left 100%; }
+label.disabled{background-position:left 0px;}
+.hRadio
+{
+padding-left: 22px; display: inline-block;
+background: transparent url(../../images/csu/formImg/radio.png) no-repeat left top;
+height: 19px; line-height:20px;
+cursor:pointer;vertical-align:middle;
+}
+.hRadio_Checked { background-position: left bottom;}
+
+
+

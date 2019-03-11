@@ -1,0 +1,149 @@
+/* CSS Document */
+.hand {
+
+	cursor:hand;
+}
+td.buttonOnLeft {
+	width: 5px;
+	background-image: url(../images/buttonOnLeft.gif);
+	background-position:top ;
+	background-repeat:no-repeat ;
+	height: 26px;
+	}
+td.buttonOnMiddle {
+	background-image: url(../images/buttonOnBg.gif);
+	background-position:top ;
+	background-repeat:repeat-x ;
+	height: 26px;
+	padding:2px 8px 0px 7px;
+	font-size:12px;
+	cursor:hand;
+	color: #020202;
+	text-align:center;
+	}
+td.buttonOnMiddle img{
+	padding:0;
+	}
+td.buttonOnRight {
+	width: 5px;
+	background-image: url(../images/buttonOnRight.gif);
+	background-position:top ;
+	background-repeat:no-repeat ;
+	height: 26px;
+	}
+	
+td.buttonOffLeft {
+	width: 5px;
+	background-image: url(../images/buttonOffLeft.gif);
+	background-position:top ;
+	background-repeat:no-repeat ;
+	height: 26px;
+	}
+td.buttonOffMiddle {
+	background-image: url(../images/buttonOffBg.gif);
+	background-position:top ;
+	background-repeat:repeat-x ;
+	height: 26px;
+	padding:2px 8px 0px 7px;
+	font-size:12px;
+	cursor:hand;
+	color: #020202;
+	text-align:center;
+	}
+td.buttonOffMiddle img{
+	padding:0;
+	}
+td.buttonOffRight {
+	width: 5px;
+	background-image: url(../images/buttonOffRight.gif);
+	background-position:top ;
+	background-repeat:no-repeat ;
+	height: 26px;
+	}
+	
+td.buttonSpace {
+	width: 1px;
+	background-image: url(../images/buttonSpace.gif);
+	height: 26px;
+	}
+td.Mtab1_OnLeft {
+	width: 5px;
+	background-image: url(../images/tabLeftOn.gif);
+	background-position:top ;
+	background-repeat:no-repeat ;
+	height: 25px;
+	}
+td.Mtab1_OnMiddle {
+	background-image: url(../images/tabBgOn.gif);
+	background-position:top ;
+	background-repeat:repeat-x ;
+	padding-top:1px;
+	padding-left:15px;
+	padding-right:15px;
+	font-size:12px;
+	font-weight:bold ;
+	cursor:hand;
+	color: #000;
+	text-align: center;
+	}
+td.Mtab1_OnRight {
+	width: 5px;
+	background-image: url(../images/tabRightOn.gif);
+	background-position:top ;
+	background-repeat:no-repeat ;
+	height: 25px;
+	}
+td.Mtab1_OffLeft {
+	width: 5px;
+	background-image: url(../images/tabLeftOff.gif);
+	background-position:top ;
+	background-repeat:no-repeat ;
+	height: 25px;
+	}
+td.Mtab1_OffMiddle {
+	background-image: url(../images/tabBgOff.gif);
+	background-position:top ;
+	background-repeat:repeat-x ;
+	padding-top:1px;
+	padding-left:15px;
+	padding-right:15px;
+	font-size:12px;
+	font-weight:bold ;
+	cursor:hand;
+	color: #000;
+	text-align: center;
+	}
+td.Mtab1_OffRight {
+	width: 5px;
+	background-image: url(../images/tabRightOff.gif);
+	background-position:top ;
+	background-repeat:no-repeat ;
+	height: 25px;
+	}
+
+/*select Begins*/
+/* CSS Document */
+.selectControlOption{display:none;}
+.selectDownList a:link,.selectDownList a:visited{font-size:12px;display:block;width:100%;text-decoration:none;color:#000;}
+.selectDownList a:hover,.selectDownList a:active{
+	font-size:12px;
+	display:block;
+	width:100%;
+	text-decoration:none;
+	color:#fff;
+	background-color: #6699FF;
+}
+.selectControlBtn,.selectBtnover,.selectBtnclick{cursor:pointer;_cursor /* */:hand;}
+.selectControlBtn{position:absolute;width:16px;height:20px;overflow:hidden;background:url(../images/Select_btn.gif) no-repeat;top:0;_top:1px;}
+.selectControl{position:relative;}
+.clsInput{border:1px solid #2f6bc1 !important;font-size:12px !important;padding:.2em .1em .15em .1em; _height /* */:20px;}
+.selectBtnover{../images/Select_btnover.gif) no-repeat;}
+.selectBtnclick{background:url(../images/Select_btnclk.gif) no-repeat;}
+.selectDownList{
+	position:absolute;
+	overflow:auto;
+	background:#fff;
+	z-index:100;
+	border: 1px solid #99CCFF;
+}
+.selectCurStatus {color:#ff0000;}

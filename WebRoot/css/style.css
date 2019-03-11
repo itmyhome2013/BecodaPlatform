@@ -1,0 +1,492 @@
+/* CSS Document */
+
+BODY {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #134EA1;
+    text-decoration: none;
+}
+
+a:active {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #C54320;
+    text-decoration: underline;
+}
+
+a:visited {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #134EA1;
+    text-decoration: none;
+}
+
+a:hover {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #C54320;
+    text-decoration: underline;
+}
+
+/*表格基本样式*/
+.table {
+    border-collapse: collapse;
+    border-top: 1px #DDDDDD solid;
+    border-left: 1px #DDDDDD solid;
+}
+
+/*单元格基本样式*/
+td {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #323232;
+}
+
+.td03 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #323232;
+}
+
+.td07 {
+    background-color: #DADADA;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 11px;
+    color: #000000
+}
+
+.td08 {
+    background-color: #EEEEEE;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 11px;
+    color: #000000
+}
+
+.td09 {
+    background-color: #EDECE2;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 11px;
+    color: #7C5618;
+    padding: 4px;
+    border-collapse: collapse;
+    border-top: 0px none;
+    border-right: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    border-left: 0px none;
+}
+
+/*页面顶部功能说明使用*/
+.page_title {
+    background-color: #FFFFFF;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #555555;
+    font-weight: bold;
+    padding: 4px;
+    border-collapse: collapse;
+    border-top: 0px solid;
+    border-right: 0px solid;
+    border-bottom: 2px #6392C6 solid;
+    border-left: 0px solid;
+}
+
+/*页面操作说明*/
+.page_banner {
+    background-color: #EFEFEF;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    padding: 4px;
+    border-collapse: collapse;
+    border-top: 0px solid;
+    border-right: 0px solid;
+    border-bottom: 1px #CCCCCC solid;
+    border-left: 0px solid;
+    height: 25px;
+}
+
+/**/
+.td_title {
+    background-color: #FFFFFF;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #555555;
+    font-weight: bold;
+    padding: 4px;
+    border-collapse: collapse;
+    border-top: 0px solid;
+    border-right: 0px solid;
+    border-bottom: 0px solid;
+    border-left: 0px solid;
+}
+
+.td_required {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #134EA1;
+    padding: 2px;
+    border-right: 1px #DDDDDD solid;
+    border-bottom: 1px #DDDDDD solid;
+    height: 22px;
+}
+
+/*按钮基本样式*/
+.button {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    HEIGHT: 20px;
+    background-image: url( ../images/btbg_03.gif );
+    border: 1px solid #A9A9A9;
+    background-color: transparent;
+    cursor: hand;
+    color: #000000;
+}
+
+/*选择代码按钮*/
+.button_select {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    width: 21px;
+    HEIGHT: 20px;
+    background-image: url( ../images/search.gif );
+    border: 0px none;
+    background-color: transparent;
+    cursor: hand;
+}
+
+/*选择日历*/
+.button_date {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    width: 21px;
+    HEIGHT: 20px;
+    background-image: url( ../images/calbtn.gif );
+    border: 0px none;
+    background-color: transparent;
+    cursor: hand;
+}
+
+/*列表表头*/
+.td_header {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    padding: 2px;
+    border-right: 1px #DDDDDD solid;
+    border-bottom: 1px #DDDDDD solid;
+    height: 22px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.td_header1 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    padding: 2px;
+
+    height: 22px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/*列表表体*/
+.td_body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    background-color: #FFFFFF;
+    padding: 2px;
+    border-right: 1px #DDDDDD solid;
+    border-bottom: 1px #DDDDDD solid;
+    height: 22px;
+}
+
+.td_top2 {
+    font-size: 12px;
+    color: #000000;
+    text-align: center;
+    background-color: #DCE2ED;
+    padding: 4px;
+    border-collapse: collapse;
+    border-top: 1px #98ACC3 solid;
+    border-right: 1px #FFFFFF solid;
+}
+
+/*输入框样式*/
+.input {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #323232;
+    background-color: #FFFFFF;
+    height: 20px;
+    border: 1px solid #B7B3AD;
+}
+
+.input_noborder {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #323232;
+    background-color: #FFFFFF;
+    height: 20px;
+    border: 0px;
+}
+
+/*下拉框样式*/
+select {
+    CURSOR: auto;
+    COLOR: #000000;
+    FONT-SIZE: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/*文本域样式*/
+textarea {
+    FONT-SIZE: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border: 1px solid #B7B3AD;
+    overflow: auto;
+}
+
+/*控制条*/
+.ctrlbar {
+    BORDER-RIGHT: #D8DEE6 1px solid;
+    BORDER-LEFT: #9CAFC9 1px solid;
+    BACKGROUND-COLOR: #D8DEE6
+}
+
+/*编辑页面标签样式*/
+.td_lable {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    background-color: #EFEFEF;
+    padding: 2px;
+    border-right: 1px #DDDDDD solid;
+    border-bottom: 1px #DDDDDD solid;
+}
+
+/*编辑页面输入部分样式*/
+.td_edit {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    background-color: #FFFFFF;
+    padding: 2px;
+    border-right: 1px #DDDDDD solid;
+    border-bottom: 1px #DDDDDD solid;
+    height: 22px;
+}
+
+/*********to modify *******************/
+.sec1 {
+    background-color: #F9F9F9;
+    cursor: hand;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #555555;
+    border-left: 1px solid #BCBCBC;
+    border-top: 1px solid #BCBCBC;
+    border-right: 1px solid #BCBCBC;
+    border-bottom: 1px solid #BCBCBC;
+}
+
+.sec2 {
+    background-color: #DDDDDD;
+    cursor: hand;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+    border-left: 1px solid #BCBCBC;
+    border-top: 1px solid #BCBCBC;
+    border-right: 1px solid #BCBCBC;
+    border-bottom: 1px solid #BCBCBC;
+}
+
+.sec3 {
+    background-color: #FFFFFF;
+    cursor: auto;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    border-left: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    border-bottom: 1px solid #DADADA
+}
+
+.main_tab {
+    background-color: #FFFFFF;
+    color: #555555;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-left: 1px solid #6395C6;
+    border-top: 1px solid #6395C6;
+    border-right: 1px solid #6395C6;
+    border-bottom: 1px solid #6395C6;
+}
+
+.orgunitchartitemcell {
+    BORDER-RIGHT: #D8DEE6 1px solid;
+    BORDER-TOP: #D8DEE6 1px solid;
+    VERTICAL-ALIGN: top;
+    BORDER-LEFT: #D8DEE6 1px solid;
+    WIDTH: 1px;
+    CURSOR: move;
+    BORDER-BOTTOM: #D8DEE6 1px solid;
+    BACKGROUND-COLOR: #F8FCFE
+}
+
+.subtableheader {
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 5pt;
+    PADDING-BOTTOM: 1px;
+    COLOR: #ffffff;
+    PADDING-TOP: 1px;
+    BORDER-BOTTOM: #EEF2F8 1px solid;
+    BACKGROUND-COLOR: #EEF2F8;
+    TEXT-ALIGN: left
+}
+
+.subalterbar {
+    BACKGROUND-COLOR: #F8FCFE
+}
+.subtableBody {
+    writing-mode:tb-rl;
+    text-align:left;
+}
+
+.orgunitchartitemcell2 {
+    BORDER-RIGHT: #D8DEE6 1px solid;
+    BORDER-TOP: #D8DEE6 1px solid;
+    VERTICAL-ALIGN: top;
+    BORDER-LEFT: #D8DEE6 1px solid;
+    CURSOR: move;
+    BORDER-BOTTOM: #D8DEE6 1px solid;
+    BACKGROUND-COLOR: #F8FCFE;
+    PADDING-RIGHT: 4px;
+    PADDING-LEFT: 4px;
+    FONT-WEIGHT: bold;
+    PADDING-BOTTOM: 4px;
+    PADDING-TOP: 4px;
+    FONT-SIZE: 9pt;
+
+}
+
+.subtableheader2 {
+    PADDING-RIGHT: 4px;
+    PADDING-LEFT: 4px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    PADDING-BOTTOM: 4px;
+    COLOR: #ffffff;
+    PADDING-TOP: 4px;
+    BORDER-BOTTOM: #EEF2F8 1px solid;
+    BACKGROUND-COLOR: #EEF2F8;
+    TEXT-ALIGN: left
+}
+
+
+/*动态页面锁定表头*/
+td.locked_top, th.locked_top {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    padding: 2px;
+    border-right: 1px #DDDDDD solid;
+    border-bottom: 1px #DDDDDD solid;
+    height: 22px;
+    font-weight: bolder;
+    text-align: center;
+
+    position: relative;
+    z-index: 1
+}
+
+td.locked_top2 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    padding: 2px;
+    border-right: 1px #DDDDDD solid;
+    border-bottom: 1px #DDDDDD solid;
+    height: 22px;
+    font-weight: bolder;
+    text-align: center;
+    background-position: top;
+    position: relative;
+    z-index: 2
+}
+
+td.locked_top3, th.locked_top3 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    padding: 2px;
+    border-right: 1px #DDDDDD solid;
+    border-bottom: 1px #DDDDDD solid;
+    height: 22px; /*font-weight: bolder;*/
+    text-align: center;
+
+    position: relative;
+    z-index: 1
+}
+
+#datatable {
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    overflow: auto;
+}
+
+.td02 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+    background-color: #6392C6;
+    padding: 2px;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.td05 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    color: #A27A39;
+    font-weight: bold;
+    padding: 4px;
+    border-collapse: collapse;
+    border-top: 0px none;
+    border-right: 0px none;
+    border-bottom: 1px dotted #999999;
+    border-left: 0px none;
+}
+
+/*指标解释的悬浮层的样式*/
+.tableBorder7 {
+    background-color: #1e4e62;
+}
+
+th.th1 {
+    background-color: #8cb8cc;
+}
+
+td.TableBody7 {
+    background-color: #edf6fa;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

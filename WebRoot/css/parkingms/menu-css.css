@@ -1,0 +1,131 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../../images/parkingms/main/bgs.jpg);
+}
+body,html{height:100%;}
+*{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.left{
+	float: left;
+	width: 199px;
+	height: 100%;
+	margin: 0!important;
+	margin: 8px 0 4px 4px;
+	background-color: #256aab;
+	font-family: "Î¢ÈíÑÅºÚ";
+}
+.left #content {
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+.hes {
+	color: #e2f3ff;
+	background-image: url(../../images/parkingms/main/h3.jpg);
+	display: inline;
+	float: left;
+	height: 39px;
+	width: 199px;
+	font-size: 15px;
+	line-height: 39px;
+	text-align: center;
+	font-family: "Î¢ÈíÑÅºÚ";
+}
+.hes table tr td,.hes table {
+	border-collapse: collapse;
+	line-height: 39px;
+}
+.hes td img {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+img {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.menu ul li {
+	display: block;
+	width: 199px;
+	list-style: none;
+	overflow: visible;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.menu ul li a {
+	display: block;
+	height: 33px;
+	width: 149px;
+	margin-top: 0px;
+	font-size: 14px;
+	color: #FFFFFF;
+	outline: none;
+	line-height: 33px;
+	text-decoration: none;
+	padding-left: 50px;
+}
+
+
+.menu ul li .inactive {
+	background-image: url(../../images/parkingms/main/t2.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.menu ul li .active {
+	background-image: url(../../images/parkingms/main/t3.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.menu ul li ul  {
+	display: none;
+	margin: 0px;
+	list-style-type: none;
+	padding-top: 2px;
+	padding-right: 0px;
+	padding-bottom: 7px;
+	padding-left: 0px;
+}
+
+.menu ul li ul li {
+	display: block;
+	font-size: 12px;
+	color: #8f9d4c;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	line-height: 27px;
+	height: 27px;
+}
+.menu ul li ul li a {
+	font-size: 12px;
+	height: 27px;
+	color: #C9EEFE;
+	padding-left: 55px;
+	width: 144px;
+	background-image: url(../../images/parkingms/main/ww1.jpg);
+	line-height: 26px;
+}
+.menu ul li ul li a:hover {
+	background-image: url(../../images/parkingms/main/ww.jpg);
+}
+.menu ul li ul li .xuan {
+	background-image: url(../../images/parkingms/main/ww2.jpg);
+	color: #002f5c;
+}
+.menu ul li ul li .xuan:hover {
+	background-image: url(../../images/parkingms/main/ww2.jpg);
+	color: #002f5c;
+}

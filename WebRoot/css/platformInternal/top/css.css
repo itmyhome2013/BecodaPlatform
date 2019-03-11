@@ -1,0 +1,294 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, "微软雅黑";
+	background-image: url(../../../images/platformInternal/top/bj.jpg);
+}
+div {
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+.topa {
+	background-image: url(../../../images/platformInternal/top/topbj.jpg);
+	height: 94px;
+	width: 100%;
+	position: relative;
+}
+.toplef {
+	background-image: url(../../../images/platformInternal/top/logo.jpg);
+	background-repeat: no-repeat;
+	height: 94px;
+	padding-left: 428px;
+	background-position: 0px 0px;
+	z-index: 99999;
+
+}
+.topa .topright {
+	height: 74px;
+	width: 180px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding-top: 20px;
+	background-image: url(../../../images/platformInternal/top/righe.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	z-index: 99;
+}
+img {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+.topa .topright a {
+	font-family: "微软雅黑";
+	font-size: 13px;
+	color: #FFF;
+	text-decoration: none;
+	line-height: 17px;
+	padding-left: 19px;
+	background-image: url(../../../images/platformInternal/top/ss1.jpg);
+	background-repeat: no-repeat;
+	float: right;
+	margin-right: 19px;
+	height: 24px;
+}
+.topa .tew {
+	font-size: 12px;
+	line-height: 24px;
+	color: #FFF;
+	height: 24px;
+	width: 161px;
+	margin-top: 8px;
+	font-family: Arial, "微软雅黑";
+	text-align: right;
+	padding-right: 19px;
+}
+.tew span {
+	font-size: 12px;
+	padding-left: 7px;
+}
+ .SubCategoryBox{
+	width: 649px;
+	min-width: 610px;
+	text-align: left;
+	float: right;
+	display: inline;
+	background-repeat: repeat;
+	position: relative;
+	padding-top: 0px;
+	padding-right: 32px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin: 0px;
+	z-index: 9999;
+		position: absolute;
+	top: 0px;
+	left:429px;
+        }
+        .SubCategoryBox ul
+        {
+	list-style: none;
+	float: right;
+	width: 607px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+        }
+        .SubCategoryBox ul li
+        {
+	display: block;
+	float: left;
+	width: 55px;
+	line-height: 20px;
+	font-size: 13px;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: 0px 2px;
+	padding: 0px;
+	margin-bottom: 0px;
+	height: 80px;
+	margin-top: 10px;
+	margin-right: 1px;
+	margin-left: 10px;
+        }
+.SubCategoryBox .fhl {
+	background-image: url(../../../images/platformInternal/top/a1.png);
+	float: left;
+	height: 80px;
+	width: 55px;
+	background-position: 0px 0px;
+}
+.SubCategoryBox .fhl:hover {
+	background-image: url(../../../images/platformInternal/top/a11.png) ;
+}
+.ceshi {
+	background-image: url(../../../images/platformInternal/top/XQGLH.png) !important;
+}
+.fhl.xuan  {
+	background-image: url(../../../images/platformInternal/top/a11.png) !important;
+}
+.fhl.SJGL {
+	background-image: url(../../../images/platformInternal/top/SJGL.png) !important;
+}
+.fhl.SJGL:hover {
+	background-image: url(../../../images/platformInternal/top/SJGLH.png) !important;
+}
+.SJGL.xuan {
+	background-image: url(../../../images/platformInternal/top/SJGL.png) !important;
+}
+.fhl.XQGL {
+	background-image: url(../../../images/platformInternal/top/XQGL.png) !important;
+}
+.fhl.XQGL:hover {
+	background-image: url(../../../images/platformInternal/top/XQGLH.png) !important;
+}
+.XQGL.xuan {
+	background-image: url(../../../images/platformInternal/top/XQGLH.png) !important;
+}
+.fhl.YJZH {
+	background-image: url(../../../images/platformInternal/top/YJZH.png) !important;
+}
+.fhl.YJZH:hover {
+	background-image: url(../../../images/platformInternal/top/YJZHH.png) !important;
+}
+.YJZH.xuan {
+	background-image: url(../../../images/platformInternal/top/YJZHH.png) !important;
+}
+.fhl.RKGL {
+	background-image: url(../../../images/platformInternal/top/RKGL.png) !important;
+}
+.fhl.RKGL:hover {
+	background-image: url(../../../images/platformInternal/top/RKGLH.png) !important;
+}
+.RKGL.xuan {
+	background-image: url(../../../images/platformInternal/top/RKGLH.png) !important;
+}
+
+.fhl.JCSJ {
+	background-image: url(../../../images/platformInternal/top/JCSJ.png) !important;
+}
+.fhl.JCSJ:hover {
+	background-image: url(../../../images/platformInternal/top/JCSJH.png) !important;
+}
+.JCSJ.xuan {
+	background-image: url(../../../images/platformInternal/top/JCSJH.png) !important;
+}
+
+.fhl.ZZWW {
+	background-image: url(../../../images/platformInternal/top/ZZWW.png) !important;
+}
+.fhl.ZZWW:hover {
+	background-image: url(../../../images/platformInternal/top/ZZWWH.png) !important;
+}
+.ZZWW.xuan {
+	background-image: url(../../../images/platformInternal/top/ZZWWH.png) !important;
+}
+
+.fhl.GZJD {
+	background-image: url(../../../images/platformInternal/top/GZJD.png) !important;
+}
+.fhl.GZJD:hover {
+	background-image: url(../../../images/platformInternal/top/GZJDH.png) !important;
+}
+.GZJD.xuan{
+	background-image: url(../../../images/platformInternal/top/GZJDH.png) !important;
+}
+
+.fhl.JCZC {
+	background-image: url(../../../images/platformInternal/top/JCZC.png) !important;
+}
+.fhl.JCZC:hover {
+	background-image: url(../../../images/platformInternal/top/JCZCH.png) !important;
+}
+.JCZC.xuan {
+	background-image: url(../../../images/platformInternal/top/JCZCH.png) !important;
+}
+
+.fhl.BMGL {
+	background-image: url(../../../images/platformInternal/top/BMGL.png) !important;
+}
+.fhl.BMGL:hover {
+	background-image: url(../../../images/platformInternal/top/BMGLH.png) !important;
+}
+.BMGL.xuan {
+	background-image: url(../../../images/platformInternal/top/BMGLH.png) !important;
+}
+
+.fhl.XTGL {
+	background-image: url(../../../images/platformInternal/top/XTGL.png) !important;
+}
+.fhl.XTGL:hover {
+	background-image: url(../../../images/platformInternal/top/XTGLH.png) !important;
+}
+.XTGL.xuan {
+	background-image: url(../../../images/platformInternal/top/XTGLH.png) !important;
+}
+
+.fhl.XMGL {
+	background-image: url(../../../images/platformInternal/top/XMGL.png) !important;
+}
+.fhl.XMGL:hover {
+	background-image: url(../../../images/platformInternal/top/XMGLH.png) !important;
+}
+.fhl.XXGL {
+	background-image: url(../../../images/platformInternal/top/XXGL.png) !important;
+}
+.fhl.XXGL:hover {
+	background-image: url(../../../images/platformInternal/top/XXGLH.png) !important;
+}
+.XMGL.xuan {
+	background-image: url(../../../images/platformInternal/top/XMGLH.png) !important;
+}
+        .showmore
+        {
+	float: left;
+	display: inline;
+	position: absolute;
+	right: 8px;
+	top: 27px;
+        }
+        .showmore a
+        {
+	display: block;
+	width: 26px;
+	line-height: 26px;
+	font-size: 11px;
+	color: #EDF8FF;
+	text-decoration: none;
+	height: 50px;
+	margin: 0;
+	text-align: center;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-top: 3px;
+	font-family: Arial, "微软雅黑";
+        }
+        .showmore a span
+        {
+	background-image: url(../../../images/platformInternal/top/shen.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	height: 24px;
+	width: 24px;
+	float: left;
+	padding-top: 22px;
+	font-size: 11px;
+	font-family: Arial, "微软雅黑";
+        }

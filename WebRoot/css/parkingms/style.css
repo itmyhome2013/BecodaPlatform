@@ -1,0 +1,390 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../../images/parkingms/main/bgs.jpg);
+}
+*{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+body,html{height:100%;}
+.noneBox {display:none;}
+/*----left---------------------------*/
+.left{
+	float: left;
+	width: 199px;
+	height: 100%;
+	margin: 0!important;
+	margin: 8px 0 4px 4px;
+	background-color: #256aab;
+	font-family: "Î¢ÈíÑÅºÚ";
+}
+.hes {
+	color: #e2f3ff;
+	background-image: url(../../images/parkingms/main/h3.jpg);
+	display: inline;
+	float: left;
+	height: 39px;
+	width: 199px;
+	font-size: 15px;
+	line-height: 39px;
+	text-align: center;
+	font-family: "Î¢ÈíÑÅºÚ";
+}
+
+.subNavBox{
+	width: 199px;
+	padding: 0px;
+	font-family: "Î¢ÈíÑÅºÚ";
+	margin-right: 0px;
+	margin-top: 0px;
+	display: inline;
+	float: left;
+}
+
+.subNav{
+	cursor: pointer;
+	font-weight: normal;
+	font-size: 13px;
+	color: #e2f3ff;
+	line-height: 33px;
+	background-position: 0px 0px;
+	background-image: url(../../images/parkingms/main/t2.jpg);
+	background-repeat: no-repeat;
+	width: 152px;
+	padding-left: 49px;
+}
+.subNav:hover{
+	color: #FEFFCA;
+}
+.currentDd{
+	color: #142491;
+}
+.currentDt{
+	background-image: url(../../images/parkingms/main/t3.jpg);
+	color: #FFFFFF;
+}
+.hwd {
+	background-image: url(../../images/parkingms/main/t2.jpg);
+	height: 33px;
+	width: 199px;
+}
+.ert {
+	display: inline;
+	float: left;
+	height: 20px;
+	width: 24px;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 7px;
+	margin-right: 2px;
+}
+.ert img {
+	cursor: pointer;
+}
+
+
+
+.navContent{
+	display: none;
+	margin-top: 2px;
+	margin-bottom: 7px;
+}
+.navContent li {
+	background-image: url(../../images/parkingms/main/1.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.navContent li a{
+	display: block;
+	width: 144px;
+	heighr: 28px;
+	text-align: left;
+	font-size: 12px;
+	line-height: 27px;
+	color: #b8e9fe;
+	text-decoration: none;
+	background-image: url(../../images/parkingms/main/ww1.jpg);
+	padding-left: 55px;
+}
+
+
+.navContent li a:hover{
+	background-image: url(../../images/parkingms/main/ww.jpg);
+}
+.navContent li a.xuanz {
+	background-image: url(../../images/parkingms/main/ww2.jpg);
+	color: #002f5c;
+}
+
+.botdg {
+	background-image: url(../../images/parkingms/main/ew.jpg);
+	height: 1px;
+	width: 199px;
+	display: inline;
+	float: left;
+}
+
+
+
+
+
+
+/*----rrcc-------------*/
+.righ{
+	width: auto;
+	height: 100%;
+	margin-left: 199px;
+	position: relative;
+	background-image: url(../../images/parkingms/main/te.jpg);
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+/*----center---------------------------*/
+.center{
+	float: left;
+	height: 60px;
+	width: 14px;
+	cursor: pointer;
+	background-image: url(../../images/parkingms/main/center.gif);
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 0px;
+	top: 42%;
+	padding: 0px;
+	margin: 0px;
+	z-index: 99999;
+}
+
+
+/*----right---------------------------*/
+.right{
+	width: auto;
+	height: 100%;
+	padding: 10px;
+	float: left;
+	overflow:auto;
+}
+.moku {
+	margin-bottom: 20px;
+	float: left;
+}
+.moku .biaot {
+	background-image: url(../../images/parkingms/main/ew1.png);
+	height: 34px;
+	position: relative;
+	line-height: 33px;
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 14px;
+}
+.biaot .fgw {
+	background-image: url(../../images/parkingms/main/ww22.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	position: absolute;
+	height: 34px;
+	width: 12px;
+	top: 0px;
+	right: 0px;
+}
+.moku .kuang {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #cbcbcb;
+	border-bottom-color: #cbcbcb;
+	border-left-color: #cbcbcb;
+	background-color: #FFF;
+	padding-top: 14px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	font-family: "Î¢ÈíÑÅºÚ";
+}
+.ted ,.ted td{
+	border-collapse: collapse;
+	border: 1px solid #e3e8ed;
+}
+.ted{
+	width: 100%;
+}
+.ted td{
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	font-size: 13px;
+	line-height: 19px;
+	font-family: "Î¢ÈíÑÅºÚ";
+}
+.kuang .knei {
+	font-size: 13px;
+	line-height: 26px;
+	height: 26px;
+	font-family: "Î¢ÈíÑÅºÚ";
+}
+.kuang .tefg {
+	line-height: 23px;
+	height: 23px;
+	border: 1px solid #c9c9c9;
+	font-family: "Î¢ÈíÑÅºÚ";
+}
+.demoContent {
+	margin-top: 12px;
+
+
+}
+
+ #Tab1{
+	width: 100%;
+	text-align: left;
+	position: relative;
+}
+ /*²Ëµ¥class*/
+ .Menubox {
+	height: 30px;
+	line-height: 30px;
+	padding-top: 0;
+	padding-bottom: 0;
+	left: 0px;
+	top: 0px;
+	width: 99%;
+	z-index: 444;
+	padding-right: 12px;
+	background-image: url(../../images/parkingms/main/xian.jpg);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+ }
+ .Menubox ul{
+	float: left;
+	position: absolute;
+	top: 0px;
+	height: 30px;
+	left: 0px;
+ }
+ .Menubox li{
+	float: left;
+	margin-right: 8px;
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 30px;
+	position: relative;
+	background-image: url(../../images/parkingms/main/33.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+	width: 100px;
+	color: #3A3A3A;
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 12px;
+	cursor: pointer;
+ }
+ .Menubox li.hover{
+	height: 30px;
+	cursor: pointer;
+	background-image: url(../../images/parkingms/main/32.jpg);
+	background-repeat: no-repeat;
+	font-size: 12px;
+ }
+ 
+ 
+ 
+ .Contentbox{
+	overflow: hidden;
+	padding-top: 9px;
+	padding-right: 5px;
+	padding-bottom: 9px;
+	padding-left: 5px;
+	left: 0px;
+	top: 29px;
+	width: 99%;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+	border-left-color: #CCC;
+	background-color: #FFF;
+ }
+.shuju  {
+	width: 100%;
+	border-collapse: collapse;
+	font-family: "ËÎÌå";
+	font-size: 12px;
+	color: #1F1F1F;
+}
+.shuju td    {
+	text-align: center;
+	line-height: 26px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-right: 2px;
+	padding-left: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ebebeb;
+	}
+.shuju .taitou {
+	background-image: url(../../images/parkingms/main/dd.jpg);
+	background-repeat: repeat-x;
+	background-position: 0px 3px;
+}
+.shuju .taitou td{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #E1E1E1;
+	line-height: 17px;
+	height: 18px;
+	border-bottom-color: #d1d6dd;
+}
+
+.hes {
+	color: #e2f3ff;
+	background-image: url(../../images/parkingms/main/h3.jpg);
+	display: inline;
+	height: 39px;
+	width: 199px;
+	font-size: 15px;
+	line-height: 39px;
+	text-align: center;
+	font-family: "Î¢ÈíÑÅºÚ";
+}
+.hes table tr td,.hes table {
+	 border-collapse:collapse;
+}
+img {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.anl {
+	background-image: url(../../images/parkingms/ann.gif);
+	height: 28px;
+	width: 62px;
+	display: inline;
+	float: left;
+	text-align: center;
+	color: #FFF;
+	text-decoration: none;
+	line-height: 27px;
+	font-size: 14px;
+	margin-right: 16px;
+}
+.anl:hover {
+	background-image: url(../../images/parkingms/ann2.gif);
+}

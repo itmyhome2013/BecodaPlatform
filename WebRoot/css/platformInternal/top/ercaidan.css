@@ -1,0 +1,183 @@
+/* ================================================================ 
+This copyright notice must be kept untouched in the stylesheet at 
+all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.stunicholls.com/menu/pro_drop_2.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+.preload1 {background: url(../../../images/parkingms/main/33.gif);}
+.preload2 {background: url(../../../images/parkingms/main/33.gif);}
+
+#nav {
+	list-style: none;
+	z-index: 500;
+	font-family: Arial, "Î¢ÈíÑÅºÚ";
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	background-image: url(../../../images/platformInternal/top/qq.jpg);
+	background-repeat: repeat-x;
+	float: left;
+	padding: 0;
+	width: 100%;
+	margin-top: 0px;
+	height: 35px;
+}
+#nav li.top {display:block; float:left; height:38px;}
+#nav li a.top_link {
+	display: block;
+	float: left;
+	height: 35px;
+	line-height: 33px;
+	color: #464646;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 0 0 0 12px;
+	cursor: pointer;
+	background: url(three_0.gif);
+	font-family: Arial, "Î¢ÈíÑÅºÚ";
+}
+#nav li a.top_link span {float:left; display:block; padding:0 24px 0 12px; height:35px; background: url(three_0.gif) right top no-repeat;}
+#nav li a.top_link span.down {float:left; display:block; padding:0 24px 0 12px; height:35px; background: url(three_0a.gif) no-repeat right top;}
+
+#nav li:hover a.top_link {
+	color: #1661b7;
+	background: url(../../../images/parkingms/main/33.gif) no-repeat;
+}
+#nav li:hover a.top_link span {background:url(../../../images/parkingms/main/33.gif) no-repeat right top;}
+#nav li:hover a.top_link span.down {background:url(../../../images/parkingms/main/33.gif.gif) no-repeat right top;}
+
+/* Default list styling */
+
+#nav li:hover {position:relative; z-index:200;}
+
+#nav li:hover ul.sub
+{
+	left: 5px;
+	top: 30px;
+	padding: 3px;
+	border: 1px solid #a9a9a9;
+	white-space: nowrap;
+	width: 111px;
+	height: auto;
+	z-index: 300;
+	background-color: #FFFFFF;
+}
+#nav li:hover ul.sub li
+{
+	display: block;
+	height: 22px;
+	position: relative;
+	float: left;
+	width: 111px;
+	font-weight: normal;
+}
+#nav li:hover ul.sub li a
+{
+	display: block;
+	font-size: 13px;
+	height: 20px;
+	width: 109px;
+	line-height: 20px;
+	text-indent: 5px;
+	color: #000;
+	text-decoration: none;
+	font-family: Arial, "Î¢ÈíÑÅºÚ";
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #dddddd;
+	border-left-color: #FFFFFF;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+#nav li ul.sub li a.fly
+{
+	background-color: #FFFFFF;
+	background-image: url(../../../images/platformInternal/top/arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 101px 6px;
+	
+}
+#nav li:hover ul.sub li a:hover 
+{
+	color: #fff;
+	border-color: #fff;
+	background-color: #0973c8;
+}
+#nav li:hover ul.sub li a.fly:hover
+{
+	color: #fff;
+	background-color: #0e67b8;
+	background-image: url(../../../images/platformInternal/top/arrow_over.gif);
+	background-repeat: no-repeat;
+	background-position: 101px 6px;
+}
+
+
+#nav li:hover li:hover ul,
+#nav li:hover li:hover li:hover ul,
+#nav li:hover li:hover li:hover li:hover ul,
+#nav li:hover li:hover li:hover li:hover li:hover ul
+{
+	left: 108px;
+	top: -4px;
+	padding: 3px;
+	white-space: nowrap;
+	width: 111px;
+	z-index: 400;
+	height: auto;
+	background-color: #FFFFFF;
+	border: 1px solid #a9a9a9;
+}
+
+#nav ul, 
+#nav li:hover ul ul,
+#nav li:hover li:hover ul ul,
+#nav li:hover li:hover li:hover ul ul,
+#nav li:hover li:hover li:hover li:hover ul ul
+{position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none;}
+
+#nav li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover li:hover li:hover a.fly
+{
+	color: #fff;
+	background-color: #0973c8;
+	background-image: url(../../../images/platformInternal/top/arrow_over.gif);
+	background-repeat: no-repeat;
+	background-position: 101px 6px;
+	border-top-color: #fff;
+	border-right-color: #fff;
+	border-bottom-color: #dddddd;
+	border-left-color: #fff;
+} 
+
+#nav li:hover li:hover li a.fly,
+#nav li:hover li:hover li:hover li a.fly,
+#nav li:hover li:hover li:hover li:hover li a.fly
+{
+	color: #000;
+	background-color: #FFFFFF;
+	background-image: url(../../../images/platformInternal/top/arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 101px 6px;
+} 
+#nav .xiank {
+	color: #a2a2a2;
+	font-size: 12px;
+	line-height: 33px;
+}
