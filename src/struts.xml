@@ -1,0 +1,43 @@
+﻿ <!DOCTYPE struts PUBLIC
+         "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+ <struts>
+    <constant name="struts.ui.theme" value="simple"/>
+
+
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+    <include file="../conf/struts/base-config.xml"></include>
+    <include file="../conf/struts/sys-config.xml"></include>
+    <include file="../conf/struts/pms-config.xml"></include>
+	<include file="../conf/struts/doc-config.xml"></include>
+	<include file="../conf/struts/emp-config.xml"></include>
+	<include file="../conf/struts/org-config.xml"></include>
+	<include file="../conf/struts/run-config.xml"></include>
+	<include file="../conf/struts/pcs-config.xml"></include>
+    <include file="../conf/struts/qry-config.xml"></include>
+	<include file="../conf/struts/tls_webmgr-config.xml"></include>
+	<include file="../conf/struts/share-config.xml"></include>
+	<include file="../conf/struts/special-config.xml"></include>
+	<include file="../conf/struts/online_info-config.xml"></include>
+	<include file="../conf/struts/csu-config.xml"></include>
+	<include file="../conf/struts/csu/csu-techers.xml"></include>
+	<include file="../conf/struts/east-config.xml"></include>
+	<include file="../conf/struts/east_gkdd-config.xml"></include>
+	<include file="../conf/struts/east-jhzb-config.xml"></include>
+	<include file="../conf/struts/east_ynsb-config.xml"></include>
+	<include file="../conf/struts/east_zdsb-config.xml"></include>
+	<include file="../conf/struts/east_daxx-config.xml"></include>
+	<include file="../conf/struts/east_yjbj-config.xml"></include>
+	<include file="../conf/struts/east_sjbl-config.xml"></include>
+	<include file="../conf/struts/dictionary-config.xml"></include>
+	<include file="../conf/struts/videoSurveillance-config.xml"></include>
+	<include file="../conf/struts/east_ssjc-config.xml"></include>
+	<include file="../conf/struts/east-history.xml"></include>
+	<include file="../conf/struts/east-tjbb.xml"></include>
+     <package name="com.action" extends="struts-default">
+         <!--<action name="genericAction" class="com.becoda.bkms.common.web.GenericAction">-->
+            <!--<result name="overtime">/jsp/overtime.jsp</result>-->
+        <!--</action>-->
+     </package>
+ </struts>
+ 
