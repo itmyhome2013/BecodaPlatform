@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+.gsf {
+	background-image: url(images/qwess.jpg);
+	height: 13px;
+	width: 179px;
+	display: inline;
+	float: left;
+}
+.hes {
+	color: #15393C;
+	background-image: url(images/h3ss.jpg);
+	display: inline;
+	float: left;
+	height: 39px;
+	width: 179px;
+	font-size: 15px;
+	line-height: 39px;
+	text-align: center;
+	font-family: "微软雅黑";
+}
+
+.subNavBox{
+	width: 179px;
+	padding: 0px;
+	font-family: "微软雅黑";
+	margin-right: 0px;
+	margin-top: 0px;
+	display: inline;
+	float: left;
+}
+
+.subNav,.subNavv{
+	cursor: pointer;
+	font-weight: normal;
+	font-size: 13px;
+	color: #121527;
+	line-height: 33px;
+	background-position: -5px 0px;
+	background-image: url(images/t2ss.jpg);
+	background-repeat: no-repeat;
+	width: 155px;
+	padding-left: 23px;
+}
+
+.subNav:hover,.subNavv:hover{
+	color: #FFFFFF;
+}
+.currentDd{
+	color: #142491;
+}
+.currentDt{
+	background-image: url(images/t3ss.jpg);
+	color: #FFFFFF;
+	background-position: -5px;
+}
+.hwd {
+	background-image: url(images/t2ss.jpg);
+	height: 33px;
+	width: 179px;
+	background-position: -5px;
+}
+.ert img {
+	cursor: pointer;
+}
+
+
+
+.navContent{
+	display: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.navContent li {
+	background-image: url(images/1.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.navContent li a{
+	display: block;
+	width: 135px;
+	heighr: 28px;
+	text-align: left;
+	font-size: 12px;
+	line-height: 27px;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-image: url(images/ww1ss.jpg);
+	padding-left: 43px;
+	background-position: -12px;
+}
+
+
+.navContent li a:hover{
+	background-image: url(images/wwss.jpg);
+	text-decoration: none;
+}
+.navContent li a.xuanz {
+	background-image: url(images/ww2ss.jpg);
+	color: #002f5c;
+}
+
+.botdg {
+	background-image: url(images/ewss.jpg);
+	height: 1px;
+	width: 179px;
+	display: inline;
+	float: left;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	/**
+	
+	background-image: url(images/666.png);
+	*/
+	background-position: left bottom;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-color: #239ee4;
+}
+*{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+html {
+	height:100%;
+
+}

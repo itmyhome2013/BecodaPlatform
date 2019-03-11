@@ -1,0 +1,42 @@
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+<title></title>
+<link href="/css/inpormation/common.css" rel="stylesheet" type="text/css" />
+<link href="/css/inpormation/er.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body >
+
+
+<div class="wrapper">
+
+
+<div class="right" style=" margin-left:0; width:754px;">
+<div class="biaotis">$infoTitle</div>
+<div class="shijian">发表时间：$createTime</div>
+<p class="neire">
+$infoContent
+</p>
+
+
+</div>
+
+
+
+</div>
+
+<!--
+<iframe id="iframeC" name="iframeC" src="" width="0" height="0" style="display:none;" ></iframe>
+
+<script type="text/javascript">
+function sethash(){
+    var hashH = Math.max(document.body.scrollHeight,document.body.clientHeight);
+    var urlC = "http://192.168.1.102:8080/jsp/tls/agent.html";
+    document.getElementById("iframeC").src=urlC+"#"+hashH;
+}
+window.onload=sethash;
+</script>
+-->
+</body>
+</html>
