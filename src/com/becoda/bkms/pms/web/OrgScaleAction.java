@@ -1,0 +1,270 @@
+﻿package com.becoda.bkms.pms.web;
+
+import com.becoda.bkms.cache.SysCacheTool;
+import com.becoda.bkms.common.exception.BkmsException;
+import com.becoda.bkms.common.web.GenericAction;
+import com.becoda.bkms.org.pojo.bo.Org;
+import com.becoda.bkms.pms.PmsConstants;
+import com.becoda.bkms.pms.pojo.bo.RoleOrgScaleBO;
+import com.becoda.bkms.pms.ucc.IRoleOrgScaleUCC;
+import com.becoda.bkms.pms.ucc.IUserManageUCC;
+import com.becoda.bkms.util.Tools;
+import com.becoda.bkms.util.BkmsContext;
+
+import java.util.List;
+
+/**
+ * Created by IntelliJ IDEA.
+ * User: lirg
+ * Date: 2015-7-25
+ * Time: 9:25:53
+ * To change this template use File | Settings | File Templates.
+ */
+public class OrgScaleAction extends GenericAction {
+    /**
+     * 查询机构权限
+     *
+     * @return
+     * @throws BkmsException
+     */
+    public String pageInit() throws BkmsException {
+        try {
+            String pageFlag = Tools.filterNull(hrequest.getParameter("pageFlag"));
+            String scaleFlag = Tools.filterNull(hrequest.getParameter("scaleFlag"));
+            String paramId = Tools.filterNull(hrequest.getParameter("paramId"));
+            if ("1".equals(pageFlag)) {  //角色授权 得到有权限的权限ID
+                queryRoleOrgScale(paramId, scaleFlag);
+            } else {                     //用户授权 得到有权限的权限ID
+                queryUserOrgScale(paramId, scaleFlag);
+            }
+        } catch (Exception e) {
+            BkmsException he = new BkmsException(new StringBuffer().append(getClass().getName()).append("错误:").toString(), e, this.getClass());
+            this.addActionError(he.getFlag()+he.getCause().getMessage());
+        }
+        return "view";
+    }
+
+    /**
+     * 查询角色机构范围
+     */
+    private void queryRoleOrgScale(String paramId, String scaleFlag) throws BkmsException {
+        if (paramId != null && !paramId.equals("") && scaleFlag != null && !scaleFlag.equals("")) {
+            IRoleOrgScaleUCC ucc = (IRoleOrgScaleUCC) getBean("pms_roleOrgScaleUCC");
+            List haveOrgScale = ucc.queryRoleOrgScale(paramId, scaleFlag, PmsConstants.SCALE_USE);
+            List noOrgScale = ucc.queryRoleOrgScale(paramId, scaleFlag, PmsConstants.SCALE_REFUSE);
+            request.setAttribute("haveOrgScale", haveOrgScale);
+            request.setAttribute("noOrgScale", noOrgScale);
+        }
+    }
+
+    /**
+     * 查询用户机构范围
+     */
+    private void queryUserOrgScale(String paramId, String scaleFlag) throws BkmsException {
+        if (paramId != null && !paramId.equals("") && scaleFlag != null && !scaleFlag.equals("")) {
+            IUserManageUCC ucc = (IUserManageUCC) getBean("pms_userManageUCC");
+            List haveOrgScale = ucc.queryUserOrgScale(paramId, scaleFlag, PmsConstants.SCALE_USE);
+            List noOrgScale = ucc.queryUserOrgScale(paramId, scaleFlag, PmsConstants.SCALE_REFUSE);
+            request.setAttribute("haveOrgScale", haveOrgScale);
+            request.setAttribute("noOrgScale", noOrgScale);
+        }
+    }
+
+    /**
+     * 删除有权机构权限
+     *
+     * @throws BkmsException
+     */
+    public String deleteHaveOrgScale() throws BkmsException {
+        String scaleFlag = Tools.filterNull(hrequest.getParameter("scaleFlag"));
+        String paramId = Tools.filterNull(hrequest.getParameter("paramId"));
+        String manageFlag = Tools.filterNull(hrequest.getParameter("manageFlag"));
+        String pageFlag = Tools.filterNull(hrequest.getParameter("pageFlag"));
+        String[] ids = hrequest.getParameterValues("selectItem1");
+        try {
+            if (ids == null) return "view";
+            IRoleOrgScaleUCC ucc = (IRoleOrgScaleUCC) getBean("pms_roleOrgScaleUCC");
+            if (PmsConstants.QUERY_SCALE.equals(scaleFlag)) {  //如果删除查询范围，则检测维护范围中是否包含删除的机构或者字节点
+                List list = ucc.queryRoleOrgScale(paramId, PmsConstants.OPERATE_SCALE, PmsConstants.SCALE_USE);
+                if (list != null) {
+                    for (int i = 0; i < ids.length; i++) {
+                        Org delOrg = SysCacheTool.findOrgById(ids[i]);
+                        for (int j = 0; j < list.size(); j++) {
+                            RoleOrgScaleBO orgScale = (RoleOrgScaleBO) list.get(j);
+                            Org operOrg = SysCacheTool.findOrgById(orgScale.getCondId());
+                            if (operOrg.getTreeId().startsWith(delOrg.getTreeId())) {
+                                this.showMessage("维护范围权限中已经包含了此查询范围内的机构,请先删除维护范围中的机构!");
+                                queryRoleOrgScale(paramId, scaleFlag);
+                                return "view";
+                            }
+                        }
+                    }
+                }
+
+            }
+            //检测排除范围中是否包含了删除机构或者字节点
+            List list = ucc.queryRoleOrgScale(paramId, scaleFlag, PmsConstants.SCALE_REFUSE);
+            if (list != null) {
+                for (int i = 0; i < ids.length; i++) {
+                    Org delOrg = SysCacheTool.findOrgById(ids[i]);
+                    for (int j = 0; j < list.size(); j++) {
+                        RoleOrgScaleBO orgScale = (RoleOrgScaleBO) list.get(j);
+                        Org operOrg = SysCacheTool.findOrgById(orgScale.getCondId());
+                        if (operOrg.getTreeId().startsWith(delOrg.getTreeId())) {
+                            this.showMessage("请先删除相关的排除权限!");
+                            queryRoleOrgScale(paramId, scaleFlag);
+                            return "view";
+                        }
+                    }
+                }
+            }
+            ucc.deleteRoleOrgScale(paramId, scaleFlag, PmsConstants.SCALE_USE, ids, manageFlag, user);
+            this.showMessage("删除成功！");
+            if ("1".equals(pageFlag)) {  //角色授权 得到有权限的权限ID
+                queryRoleOrgScale(paramId, scaleFlag);
+            } else {                     //用户授权 得到有权限的权限ID
+                queryUserOrgScale(paramId, scaleFlag);
+            }
+        }
+        catch (Exception e) {
+             BkmsException he = new BkmsException(new StringBuffer().append(getClass().getName()).append("错误:").toString(), e, this.getClass());
+            this.addActionError(he.getFlag()+he.getCause().getMessage());
+        }
+        return "view";
+    }
+
+    /**
+     * 删除排除机构权限
+     *
+     * @throws BkmsException
+     */
+    public String deleteNoOrgScale() throws BkmsException {
+        String scaleFlag = Tools.filterNull(hrequest.getParameter("scaleFlag"));
+        String paramId = Tools.filterNull(hrequest.getParameter("paramId"));
+        String manageFlag = Tools.filterNull(hrequest.getParameter("manageFlag"));
+        String pageFlag = Tools.filterNull(hrequest.getParameter("pageFlag"));
+        try {
+            if (paramId != null && !"".equals(paramId) && scaleFlag != null && !"".equals(scaleFlag)) {
+                String[] ids = hrequest.getParameterValues("selectItem2");
+                if (ids == null) return "";
+                IRoleOrgScaleUCC ucc = (IRoleOrgScaleUCC) getBean("pms_roleOrgScaleUCC");
+                ucc.deleteRoleOrgScale(paramId, scaleFlag, PmsConstants.SCALE_REFUSE, ids, manageFlag, user);
+                this.showMessage("删除成功！");
+                if ("1".equals(pageFlag)) {  //角色授权 得到有权限的权限ID
+                    queryRoleOrgScale(paramId, scaleFlag);
+                } else {                     //用户授权 得到有权限的权限ID
+                    queryUserOrgScale(paramId, scaleFlag);
+                }
+            }
+        }
+        catch (Exception e) {
+             BkmsException he = new BkmsException(new StringBuffer().append(getClass().getName()).append("错误:").toString(), e, this.getClass());
+            this.addActionError(he.getFlag()+he.getCause().getMessage());
+        }
+        return "view";
+    }
+
+    /**
+     * 修改角色有权机构范围
+     *
+     * @return String
+     */
+    public String saveHaveOrgScale() throws BkmsException {
+        String scaleFlag = Tools.filterNull(hrequest.getParameter("scaleFlag"));
+        String paramId = Tools.filterNull(hrequest.getParameter("paramId"));
+        String manageFlag = Tools.filterNull(hrequest.getParameter("manageFlag"));
+        String pageFlag = Tools.filterNull(hrequest.getParameter("pageFlag"));
+        String selOrgId = Tools.filterNull(hrequest.getParameter("selOrgId"));
+        try {
+            IRoleOrgScaleUCC ucc = (IRoleOrgScaleUCC) BkmsContext.getBean("pms_roleOrgScaleUCC");
+            if (ucc.checkOrgSelected(paramId, scaleFlag, PmsConstants.SCALE_USE, selOrgId)) {
+                this.showMessage("此机构已添加过或者添加的机构已经在范围之内，请添加其他机构!");
+                queryRoleOrgScale(paramId, scaleFlag);
+                return "view";
+            }
+            //判断有权维护机构是否在有权查询范围内 ,是否在查询排除机构范围内
+            if (PmsConstants.OPERATE_SCALE.equals(scaleFlag)) {
+                if (!ucc.checkInQueryOrgScale(paramId, selOrgId)) {
+                    this.showMessage("设置的维护机构范围必须在查询机构范围内，请重新选择！");
+                    queryRoleOrgScale(paramId, scaleFlag);
+                    return "view";
+                }
+                if (ucc.checkInQueryNoOrgScale(paramId, selOrgId)) {
+                    this.showMessage("设置的维护机构范围在查询排除机构范围内，请重新选择！");
+                    queryRoleOrgScale(paramId, scaleFlag);
+                    return "view";
+                } else {
+
+                }
+            }
+            RoleOrgScaleBO orgScale = new RoleOrgScaleBO();
+            orgScale.setCodeId(PmsConstants.CODE_TYPE_ORG);
+            orgScale.setCondId(selOrgId);
+            orgScale.setPmsType(PmsConstants.SCALE_USE);
+            orgScale.setScaleFlag(scaleFlag);
+            orgScale.setRoleId(paramId);
+            ucc.createRoleOrgScale(orgScale, user, manageFlag);
+            if ("1".equals(pageFlag)) {  //角色授权 得到有权限的权限ID
+                queryRoleOrgScale(paramId, scaleFlag);
+            } else {                     //用户授权 得到有权限的权限ID
+                queryUserOrgScale(paramId, scaleFlag);
+            }
+            this.showMessage("添加成功！");
+        } catch (Exception e) {
+             BkmsException he = new BkmsException(new StringBuffer().append(getClass().getName()).append("错误:").toString(), e, this.getClass());
+            this.addActionError(he.getFlag()+he.getCause().getMessage());
+        }
+        return "view";
+    }
+
+    /**
+     * 修改角色排除权限机构
+     *
+     * @throws BkmsException
+     */
+    public String saveNoOrgScale() throws BkmsException {
+        String scaleFlag = Tools.filterNull(hrequest.getParameter("scaleFlag"));
+        String paramId = Tools.filterNull(hrequest.getParameter("paramId"));
+        String manageFlag = Tools.filterNull(hrequest.getParameter("manageFlag"));
+        String pageFlag = Tools.filterNull(hrequest.getParameter("pageFlag"));
+        String selOrgId = Tools.filterNull(hrequest.getParameter("selOrgId"));
+        try {
+            IRoleOrgScaleUCC ucc = (IRoleOrgScaleUCC) getBean("pms_roleOrgScaleUCC");
+            if (ucc.checkOrgSelected(paramId, scaleFlag, PmsConstants.SCALE_REFUSE, selOrgId)) {
+                this.showMessage("此机构已添加过，请添加其他机构!");
+                queryRoleOrgScale(paramId, scaleFlag);
+                return "";
+            }
+            //判断有权维护机构是否在有权查询范围内 ,排除维护权限和排除查询范围不进行检测
+            if (PmsConstants.OPERATE_SCALE.equals(scaleFlag)) {
+                if (!ucc.checkInQueryOrgScale(paramId, selOrgId)) {
+                    this.showMessage("设置的维护机构范围必须在查询机构范围内，请重新选择！");
+                    queryRoleOrgScale(paramId, scaleFlag);
+                    return "";
+                }
+            }
+            if (!ucc.checkInHaveOrgScale(paramId, scaleFlag, selOrgId)) {
+                this.showMessage("设置的排除机构必须在有权机构范围内，请重新选择！");
+                queryRoleOrgScale(paramId, scaleFlag);
+                return "";
+            }
+            RoleOrgScaleBO orgScale = new RoleOrgScaleBO();
+            orgScale.setCodeId(PmsConstants.CODE_TYPE_ORG);
+            orgScale.setCondId(selOrgId);
+            orgScale.setPmsType(PmsConstants.SCALE_REFUSE);
+            orgScale.setScaleFlag(scaleFlag);
+            orgScale.setRoleId(paramId);
+            ucc.createRoleOrgScale(orgScale, user, manageFlag);
+            if ("1".equals(pageFlag)) {  //角色授权 得到有权限的权限ID
+                queryRoleOrgScale(paramId, scaleFlag);
+            } else {                     //用户授权 得到有权限的权限ID
+                queryUserOrgScale(paramId, scaleFlag);
+            }
+            this.showMessage("添加成功！");
+        } catch (Exception e) {
+            BkmsException he = new BkmsException(new StringBuffer().append(getClass().getName()).append("错误:").toString(), e, this.getClass());
+            this.addActionError(he.getFlag()+he.getCause().getMessage());
+        }
+        return "view";
+    }
+}
